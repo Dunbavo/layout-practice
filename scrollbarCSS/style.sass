@@ -14,3 +14,16 @@ body
   max-height: 400px
   overflow-x: hidden
   overflow-y: auto // добавление скролла
+  cursor: pointer
+
+.scroll-area-body
+  cursor: auto
+
+.scroll-area::-webkit-scrollbar
+  width: 6px
+
+.scroll-area::-webkit-scrollbar-track
+  background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 40%, rgba(154,154,154,1) 40%, rgba(154,154,154,1) 50%, rgba(154,154,154,1) 60%, rgba(255,255,255,0.2) 60%, rgba(255,255,255,0.2) 100%)
+
+.scroll-area::-webkit-scrollbar-thumb
+  background: #777
