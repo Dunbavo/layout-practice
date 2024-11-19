@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Scrollbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="rating"><!--используется для группировки нескольких элементов управления в веб-форме-->
+        <legend class="rating__caption">Самочувствие</legend> <!--заголовок содержания родительского элемента-->
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="health" value="1" aria-label="Ужасно" checked>
+            <input class="rating__star" type="radio" name="health" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="health" value="3" aria-label="Нормально">
+            <input class="rating__star" type="radio" name="health" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="health" value="5" aria-label="Отлично">
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Настроение</legend>
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="mood" value="1" aria-label="Ужасно">
+            <input class="rating__star" type="radio" name="mood" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="mood" value="3" aria-label="Нормально" checked>
+            <input class="rating__star" type="radio" name="mood" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="mood" value="5" aria-label="Отлично">
+        </div>
+    </fieldset>
+    <fieldset class="rating">
+        <legend class="rating__caption">Вообще</legend>
+        <div class="rating__group">
+            <input class="rating__star" type="radio" name="general" value="1" aria-label="Ужасно">
+            <input class="rating__star" type="radio" name="general" value="2" aria-label="Сносно">
+            <input class="rating__star" type="radio" name="general" value="3" aria-label="Нормально">
+            <input class="rating__star" type="radio" name="general" value="4" aria-label="Хорошо">
+            <input class="rating__star" type="radio" name="general" value="5" aria-label="Отлично" checked>
+        </div>
+    </fieldset>
+</body>
+</html>
