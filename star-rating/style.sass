@@ -19,6 +19,10 @@
   background-repeat: repeat-x
   margin: 0
 
+//.rating__group:focus-within
+//  outline-offset: 0.2em
+//  outline: solid 0.2em #4a90e2
+
 .rating__star
   position: absolute
   top: 0
@@ -31,6 +35,16 @@
   -moz-appearance: none
   appearance: none //сброс системных стилей
   margin: 0
+
+//.rating__star:focus ~ .rating__focus
+//  position: absolute
+//  top: 0
+//  right: 0
+//  bottom: 0
+//  left: 0
+//  z-index: -1
+//  outline: 0.2em solid #4a90e2
+//  outline-offset: 0.2em
 
 .rating__star:hover,
 .rating__star:checked
